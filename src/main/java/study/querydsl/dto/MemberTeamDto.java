@@ -13,7 +13,7 @@ public class MemberTeamDto {
     private String teamName;
 
 
-    //@QueryProjection
+    @QueryProjection
     public MemberTeamDto(Long memberId, String username, int age, Long teamId, String teamName) {
         this.memberId = memberId;
         this.username = username;

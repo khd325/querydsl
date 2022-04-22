@@ -726,8 +726,8 @@ public class QuerydslBasicTest {
                 .where(member.username.eq(member.username.lower()))
                 .fetch();
         for (String s : result) {
-            System.out.println("s = " + s);
-        }
+        System.out.println("s = " + s);
     }
+}
 
 }

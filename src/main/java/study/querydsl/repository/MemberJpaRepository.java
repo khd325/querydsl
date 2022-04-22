@@ -11,6 +11,7 @@ import org.springframework.util.StringUtils;
 import study.querydsl.dto.MemberSearchCondition;
 import study.querydsl.dto.MemberTeamDto;
 import study.querydsl.dto.QMemberDto;
+
 import study.querydsl.dto.QMemberTeamDto;
 import study.querydsl.entity.Member;
 import study.querydsl.entity.QMember;
@@ -109,7 +110,8 @@ public class MemberJpaRepository {
                 .where(builder)
                 .fetch();
 
-       /* return queryFactory
+/*
+ return queryFactory
                 .select(Projections.fields(MemberTeamDto.class,
                         member.id.as("memberId"),
                         member.username,
@@ -119,7 +121,9 @@ public class MemberJpaRepository {
                 .from(member)
                 .leftJoin(member.team, team)
                 .where(builder)
-                .fetch();*/
+                .fetch();
+*/
+
     }
 
     public List<MemberTeamDto> search(MemberSearchCondition condition) {
